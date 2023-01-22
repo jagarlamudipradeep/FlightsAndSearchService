@@ -68,6 +68,7 @@ const get = async (req,res) =>{
   }
 }
 
+// Patch -> /city/:id -> req.body
 const update = async(req,res) =>{
   try {
     const response = await cityService.updateCity(req.params.id,req.body)
